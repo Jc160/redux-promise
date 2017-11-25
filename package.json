@@ -1,5 +1,5 @@
 {
-  "name": "redux-promise",
+  "name": "redux-promise-x",
   "version": "1.0.0",
   "description": "Promise middleware for Redux.",
   "main": "index.js",
