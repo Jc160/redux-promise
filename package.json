@@ -1,0 +1,31 @@
+{
+  "name": "redux-promise",
+  "version": "1.0.0",
+  "description": "Promise middleware for Redux.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jc160/redux-promise.git"
+  },
+  "keywords": [
+    "redux",
+    "promise",
+    "middleware"
+  ],
+  "author": {
+    "name": "Jc160",
+    "email": "jramirez@boxxrd.com",
+    "url": "boxxrd.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Jc160/redux-promise/issues"
+  },
+  "homepage": "https://github.com/Jc160/redux-promise#readme",
+  "dependencies": {
+    "flux-standard-action": "^2.0.0"
+  }
+}
