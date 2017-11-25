@@ -38,20 +38,20 @@ function promiseMiddleware(_ref) {
 
       if (isPromise(objAction.payload)) {
         return objAction.payload.then((objResult) => {
-          const objSuccessAction = { ...objAction, payload: objResult };
+          const objSuccessAction = Object.assign({}, objAction, {  payload: objResult });
           fnDispatch(objSuccessAction);
           return objSuccessAction;
         }).catch((objError) => {
           if (isPromise(objError)) {
             return objError.then((objError) => {
-              const objErrorAction = { ...objAction, payload: objError, error: true };
+              const objErrorAction = Object.assign({}, objAction, { payload: objError, error: true });
               fnDispatch(objErrorAction);
               return Promise.reject(objErrorAction);
             });
           }
 
 
-          const objErrorAction = { ...objAction, payload: objError, error: true };
+          const objErrorAction =  Object.assign({}, objAction, { payload: objError, error: true });
           fnDispatch(objErrorAction);
 
           return Promise.reject(objErrorAction);
